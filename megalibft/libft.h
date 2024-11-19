@@ -6,7 +6,7 @@
 /*   By: gade-oli <gade-oli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:53:27 by gade-oli          #+#    #+#             */
-/*   Updated: 2024/10/10 20:43:27 by gade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/09 16:02:19 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,20 +66,19 @@ void		ft_putnbr_fd(int n, int fd);
 
 typedef struct s_list
 {
-	int					content;
-	unsigned int		index;
-	struct s_list		*next;
+	void			*data;
+	struct s_list	*next;
 }	t_list;
 
-t_list		*ft_lstnew(int content);
+t_list		*ft_lstnew(void *data);
 int			ft_lstsize(t_list *lst);
 void		ft_lstadd_front(t_list **lst, t_list *new);
 t_list		*ft_lstlast(t_list *lst);
 void		ft_lstadd_back(t_list **lst, t_list *new);
 void		ft_lstdelone(t_list *lst);
 void		ft_lstclear(t_list **lst);
-void		ft_lstiter(t_list *lst, void (*f)(int));
-t_list		*ft_lstmap(t_list *lst, int (*f)(int));
+void		ft_lstiter(t_list *lst, void (*f)(void *));
+t_list		*ft_lstmap(t_list *lst, int (*f)(void *));
 
 void		copy_string_from_index(const char *src, char *dst, int i);
 char		*get_next_line(int fd);
@@ -91,5 +90,8 @@ int			print_char(va_list args);
 int			print_str(va_list args);
 int			print_hex(unsigned int n, int flag);
 int			print_pointer(size_t n);
+
+void		free_matrix(char **matrix);
+void		print_matrix(char	**matrix);
 
 #endif

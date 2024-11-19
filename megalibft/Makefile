@@ -6,7 +6,7 @@
 #    By: gade-oli <gade-oli@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/16 11:53:14 by gade-oli          #+#    #+#              #
-#    Updated: 2023/11/03 12:00:38 by gade-oli         ###   ########.fr        #
+#    Updated: 2024/11/09 14:07:29 by gade-oli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ SRC	= 	src/ft_isalpha.c src/ft_isdigit.c src/ft_isalnum.c src/ft_isascii.c src/f
 		src/ft_strrchr.c src/ft_strchr.c src/ft_strncmp.c src/ft_atoi.c src/ft_memchr.c src/ft_memcmp.c src/ft_strdup.c \
 		src/ft_calloc.c src/ft_strnstr.c src/ft_strmapi.c src/ft_striteri.c src/ft_substr.c src/ft_strjoin.c src/ft_strtrim.c \
 		src/ft_putchar_fd.c src/ft_putstr_fd.c src/ft_putendl_fd.c src/ft_split.c src/ft_itoa.c src/ft_putnbr_fd.c \
-		src/get_next_line.c src/ft_printf.c src/printf_utils/ft_cs.c src/printf_utils/ft_di.c src/printf_utils/ft_pxX.c src/printf_utils/ft_u.c
+		src/get_next_line.c src/ft_printf.c src/printf_utils/ft_cs.c src/printf_utils/ft_di.c src/printf_utils/ft_pxX.c src/printf_utils/ft_u.c \
+		src/matrix.c
 
 OBJS =	${SRC:src/%.c=bin/%.o}
 

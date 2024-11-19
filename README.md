@@ -1,5 +1,7 @@
 # minishell
 
+diagram of the parser [here](https://drive.google.com/file/d/1MNa3-h2S7PUwt8Nyj_JiAQhYVgbKkaym/view?usp=sharing)
+
 ## structure
 
 ### parsing
